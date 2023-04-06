@@ -1,10 +1,13 @@
 # Úvodní projekt do fimy
 
+
+## [Možnost otevřít zde](https://radekpelikan.github.io/hosting4you/)
+
 - úkolem bylo vytvořit webovou stránku podle přiloženého designu
 - stránka by měla být responzivní
 - použité technologie: HTML, CSS, JS, NPM, GIT, TailwindCSS, p5.js, vite.js
 
-## [Možnost otevřít zde](https://radekpelikan.github.io/hosting4you/)
+![Design](./docs/figma.png)
 
 ## Spustit projekt
 
