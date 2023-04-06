@@ -1,52 +1,52 @@
 @font-face {
   font-family: "Heebo";
-  src: url("/assets/fonts/Heebo/Heebo-VariableFont_wght.ttf");
+  src: url("../../assets/fonts/Heebo/Heebo-VariableFont_wght.ttf");
 }
 
 @font-face {
   font-family: "Sintony";
-  src: url("/assets/fonts/Sintony/Sintony-Regular.ttf");
+  src: url("../../assets/fonts/Sintony/Sintony-Regular.ttf");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Sintony";
-  src: url("/assets/fonts/Sintony/Sintony-Bold.ttf");
+  src: url("../../assets/fonts/Sintony/Sintony-Bold.ttf");
   font-weight: 700;
 }
 
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("/assets/fonts/Source_Sans_Pro/SourceSansPro-ExtraLight.ttf");
+  src: url("../../assets/fonts/Source_Sans_Pro/SourceSansPro-ExtraLight.ttf");
   font-weight: 200;
 }
 
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("/assets/fonts/Source_Sans_Pro/SourceSansPro-Light.ttf");
+  src: url("../../assets/fonts/Source_Sans_Pro/SourceSansPro-Light.ttf");
   font-weight: 300;
 }
 
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("/assets/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf");
+  src: url("../../assets/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("/assets/fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf");
+  src: url("../../assets/fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf");
   font-weight: 600;
 }
 
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("/assets/fonts/Source_Sans_Pro/SourceSansPro-Black.ttf");
+  src: url("../../assets/fonts/Source_Sans_Pro/SourceSansPro-Black.ttf");
   font-weight: 900;
 }
 
 @font-face {
   font-family: "Poppins";
-  src: url("/assets/fonts/Poppins/Poppins-Regular.ttf");
+  src: url("../../assets/fonts/Poppins/Poppins-Regular.ttf");
   font-weight: 400;
 }
