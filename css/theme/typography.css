@@ -1,0 +1,358 @@
+/* Navbar */
+.af-nav-heading {
+  font-size: 15px;
+  font-weight: 900;
+  font-family: "Heebo", sans-serif;
+  letter-spacing: 1px;
+  line-height: 22.03px;
+}
+
+@media (min-width: theme("screens.medium")) {
+  .af-nav-heading {
+    font-size: 13px;
+    line-height: 19.09px;
+  }
+}
+
+.af-nav-item {
+  font-size: 13px;
+  font-weight: 400;
+  font-family: "Heebo", sans-serif;
+}
+
+/* Introduction Section */
+.af-display-3 {
+  font-size: 36px;
+  font-weight: 900;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 50px;
+  letter-spacing: -1.76px;
+}
+
+@media (min-width: theme("screens.medium")) {
+  .af-display-3 {
+    font-size: 60px;
+    line-height: 80px;
+    letter-spacing: -2.4px;
+  }
+}
+
+.af-body {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Sintomny", sans-serif;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.af-button {
+  font-size: 15px;
+  font-weight: 600; /* 700 isn't available */
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 24px;
+  letter-spacing: 4.2px;
+
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.af-h3 {
+  font-size: 28px;
+  font-weight: 900;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 36px;
+  color: black;
+}
+
+.af-body.af-blue {
+  color: hsla(225, 31%, 19%, 1);
+}
+
+.af-h5 {
+  font-size: 18px;
+  font-weight: 900;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 27px;
+  color: hsla(233, 19%, 17%, 1);
+}
+
+/* Services Section */
+.af-services-h1 {
+  font-size: 48px;
+  font-weight: 900;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 56px;
+
+  text-align: center;
+}
+
+.af-services-tier-price h3 span:first-child {
+  font-size: 20px;
+  font-weight: 900;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 51px;
+}
+
+.af-services-tier-price .cs-price-slash {
+  position: relative;
+}
+
+.af-services-tier-price .cs-price-slash:first-child::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 0px;
+  bottom: 5px;
+  width: 3px;
+  rotate: 7deg;
+  background-color: black;
+}
+
+@media (min-width: theme("screens.large")) {
+  .af-services-tier-price h3 span:first-child {
+    font-size: 34px;
+    line-height: 51px;
+
+    text-decoration: underline;
+  }
+}
+
+.af-services-tier-price p {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Sintony", sans-serif;
+  line-height: 24px;
+  color: hsla(213, 9%, 47%, 1);
+
+  white-space: nowrap;
+  max-width: 10rem;
+}
+
+.af-services-tier-price span:last-child {
+  position: relative;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Sintony", sans-serif;
+  line-height: 24px;
+  color: hsla(213, 9%, 47%, 1);
+}
+
+@media (min-width: theme("screens.large")) {
+  .af-services-tier-price span:last-child {
+    text-decoration: none;
+  }
+}
+
+.af-services-tier-name {
+  font-size: 15px;
+  font-weight: 900;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 24px;
+
+  text-align: center;
+}
+
+@media (min-width: theme("screens.large")) {
+  .af-services-tier-name {
+    text-align: left;
+
+    text-decoration: underline;
+  }
+}
+
+.af-services-tier-item {
+  font-size: 10px;
+  font-weight: 400;
+  font-family: "Sintony", sans-serif;
+  line-height: 24px;
+  color: hsla(213, 9%, 47%, 1);
+
+  text-align: center;
+}
+
+@media (min-width: theme("screens.medium")) {
+  .af-services-tier-item {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: theme("screens.large")) {
+  .af-services-tier-item {
+    font-size: 15px;
+    text-align: left;
+  }
+}
+
+.af-services-tier-button {
+  font-size: 15px;
+  font-weight: 900;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 20px;
+}
+
+@media (min-width: theme("screens.large")) {
+  .af-services-tier-button {
+    line-height: 24px;
+
+    text-decoration: underline;
+  }
+}
+
+/* Features Section */
+.af-features-h1 {
+  font-size: 36px;
+  font-weight: 900;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 54px;
+
+  text-align: center;
+}
+
+.af-features-body {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Sintony", sans-serif;
+  line-height: 28px;
+  color: hsla(213, 9%, 47%, 1);
+
+  text-align: center;
+}
+
+.af-features-hgroup * {
+  text-align: right;
+}
+
+.af-features-hgroup h3 {
+  font-size: 18px;
+  font-weight: 900;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 28px;
+}
+
+.af-features-hgroup p {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Sintony", sans-serif;
+  line-height: 24px;
+  color: hsla(213, 9%, 47%, 1);
+}
+
+@media (min-width: theme("screens.medium")) {
+  .af-features-h1,
+  .af-features-body,
+  .af-features-hgroup {
+    text-align: left;
+  }
+}
+
+.af-features-sum {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Sintony", sans-serif;
+  line-height: 24px;
+  color: rgb(74, 78, 82);
+}
+
+.af-features-sum span:first-child {
+  font-weight: 800;
+  color: black;
+}
+
+/* Why us? Section */
+.af-whyus-hgroup {
+  text-align: center;
+}
+
+.af-whyus-hgroup h2 {
+  font-size: 48px;
+  font-weight: 900;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 56px;
+}
+
+.af-whyus-hgroup p {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Sintony", sans-serif;
+  line-height: 28px;
+  color: hsla(213, 9%, 47%, 1);
+}
+
+.af-features-items-hgroup {
+  text-align: center;
+}
+
+.af-features-items-hgroup h3 {
+  font-size: 15px;
+  font-weight: 900;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 24px;
+}
+
+.af-features-items-hgroup p {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Sintony", sans-serif;
+  line-height: 24px;
+  color: hsla(213, 9%, 47%, 1);
+}
+
+/* Us vs Comptetion Section - Statistics Section */
+.af-statistics-h1 {
+  font-size: 36px;
+  font-weight: 900;
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 56px;
+  color: hsla(215, 100%, 50%, 1);
+
+  text-align: center;
+}
+
+.af-statistics-items {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Sintony", sans-serif;
+  line-height: 18.24px;
+  color: hsla(0, 0%, 20%, 1);
+
+  letter-spacing: 1px;
+}
+
+.af-statistics-values {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  line-height: 21px;
+  color: hsla(0, 0%, 20%, 1);
+
+  letter-spacing: 1px;
+}
+
+/* Reviews Section */
+.af-review-body {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Sintony", sans-serif;
+  line-height: 36px;
+  color: hsla(225, 31%, 19%, 1);
+}
+
+/* .af-review-user-hgroup {
+} */
+
+.af-review-user-hgroup h4 {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Sintony", sans-serif;
+  line-height: 27px;
+  color: hsla(225, 31%, 19%, 1);
+}
+
+.af-review-user-hgroup p {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Sintony", sans-serif;
+  line-height: 24px;
+  color: hsla(225, 31%, 19%, 40%);
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Rychlost",
+    "key": "speed",
+    "value": 0.6
+  },
+  {
+    "name": "Stabilita",
+    "key": "stability",
+    "value": 0.5
+  },
+  {
+    "name": "Služby",
+    "key": "servicies",
+    "value": 0.8
+  },
+  {
+    "name": "Cena",
+    "key": "price",
+    "value": 0.95
+  }
+]

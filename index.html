@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="cs" class="scroll-smooth">
+
+<head>
+  <title>hosting4you</title>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- JS Files -->
+</head>
+
+<body>
+  <header class="relative z-10 pb-4 text-white bg-secondary cs-gradient-bg">
+    <nav class="container grid place-items-center medium:flex medium:justify-between">
+      <p class="my-5 af-nav-heading">
+        <a href="#" class="px-3 py-2 cs-link-line focus:outline-none">hosting4you</a>
+      </p>
+      <ul
+        class="grid gap-4 place-items-center medium:items-center medium:gap-1 large:gap-10 extraLarge:gap-20 medium:flex af-nav-item">
+        <li>
+          <a href="#services" class="px-3 py-2 cs-link-line focus:outline-none">Služby</a>
+        </li>
+        <li>
+          <a href="#why-us" class="px-3 py-2 cs-link-line focus:outline-none">Proč my?</a>
+        </li>
+        <li>
+          <a href="#statistics" class="px-3 py-2 cs-link-line focus:outline-none">Statistiky</a>
+        </li>
+        <li class="mb-4 medium:mb-0">
+          <a href="#reviews" class="px-3 py-2 cs-link-line focus:outline-none">Recenze</a>
+        </li>
+        <!-- White Separator - shown onsly above small screens -->
+        <li class="hidden h-6 border-l-2 border-white border-solid medium:block"></li>
+        <li class="row-start-6">
+          <a href="#" class="px-3 py-2 cs-link-line focus:outline-none">Přihlásit se</a>
+        </li>
+        <li class="row-start-5">
+          <a href="#"
+            class="py-[2px] px-4 border border-white border-solid hover:bg-white focus:bg-white focus:text-black hover:text-black transition-colors duration-200 focus:outline-none">Registrace</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!--Main Header Section -->
+    <section id="header" class="container mt-16">
+
+      <div class="flex justify-center gap-4 mb-6 1280:gap-[10%] largest:gap-[20%] 1920:gap-[27%] large:justify-between">
+        <!-- Left Section of the header -->
+        <div
+          class="flex flex-col items-start gap-5 text-center medium:grid large:flex medium:gap-16 ustify-items-center medium:text-left medium:justify-items-start">
+          <hgroup class="grid gap-5 medium:gap-8">
+            <h1 class=" af-display-3 extraLarge:whitespace-nowrap">
+              hosting4you!<br>
+              Nejlepší z nejlepších
+            </h1>
+            <p class="af-body">
+              Nechte ožít své projekty již dnes!<br>
+              hosting4you vám umožní naplnit vaše cíle<br>
+              a pomůže vám vdechnout vašim projektům život
+            </p>
+          </hgroup>
+
+          <button
+            class="px-10 py-2 mx-auto rounded-full outline-none cs-button-state bg-primary af-button medium:mx-0 medium:self-end large:self-auto">
+            Začni teď
+          </button>
+        </div>
+
+        <!-- Right Section of the header -->
+        <div class="hidden gap-6 min-h-[33rem] cs-introduction-tiles medium:grid flex-grow">
+          <!-- Tiles -->
+          <div
+            class="relative col-span-3 col-start-1 px-6 py-6 bg-white 1280:px-10 large:col-start-2 large:row-start-1 large:col-span-1 rounded-xl cs-glow-tile cs-gradient-bg after:rotate-180 after:opacity-5">
+            <img src="/assets/svg/folder-blue.svg" alt="Folder-blue icon" class="ml-auto w-[68px] aspect-1">
+            <hgroup class="relative grid gap-6 bottom-10">
+              <h3 class="af-h3">
+                Silné<br>
+                uložiště
+              </h3>
+              <p class="af-body af-blue">
+                Nebuďte omezeni velikostí!
+              </p>
+            </hgroup>
+          </div>
+          <div
+            class="relative col-span-3 col-start-1 px-6 py-6 bg-white large:grid large:place-content-center 1280:px-10 large:col-start-3 large:row-span-2 large:col-span-1 rounded-xl large:text-center cs-glow-tile cs-gradient-bg after:rotate-180 after:-scale-x-100">
+            <img src="/assets/svg/shield-blue.svg" alt="Shield-blue icon"
+              class="ml-auto w-[68px] aspect-1 large:mx-auto large:mb-4">
+            <hgroup class="relative grid gap-6 bottom-10 large:bottom-0">
+              <h3 class="w-28 af-h3 large:w-fit">
+                100% Ochrana
+              </h3>
+              <p class="af-body af-blue">
+                100% ochrana pro vaše projekty!
+              </p>
+            </hgroup>
+          </div>
+          <div
+            class="relative col-span-3 col-start-1 px-6 py-6 overflow-hidden bg-white large:pt-14 1280:px-10 large:col-start-1 large:col-span-2 before:content-baseline before:w-12 before:h-5 before:block before:bg-primary before:rounded-md rounded-xl before:mb-4 cs-glow-tile cs-gradient-bg">
+            <div
+              class="absolute inset-0 cs-gradient-bg after:top-0 after:right-0 after:bottom-24 after:left-16 after:-scale-y-100 after:bg-gradient-to-l">
+            </div>
+            <!-- Blue rectange -->
+            <hgroup class="grid gap-6">
+              <h3 class="af-h3 af-blue">
+                Stabilita
+              </h3>
+              <p class="af-body af-blue">
+                Už žádné padaní webů!<br>
+                S naši stabilitou budete<br>
+                fungovat non-stop
+              </p>
+            </hgroup>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick info Section -->
+      <div class="relative grid grid-cols-3 gap-2 large:gap-8 medium:top-24">
+        <div class="flex flex-col gap-2 px-2 py-3 text-center bg-white rounded-md ">
+          <img src="/assets/svg/airplane-blue.svg" alt="Airplane icon" class="w-[50px] aspect-1 mx-auto">
+          <h3 class="af-h5">
+            Rozvíjejte se!
+          </h3>
+          <p class="af-body af-blue">
+            Chceme aby jste se rozvíjeli! Do toho !
+          </p>
+        </div>
+        <div class="flex flex-col gap-2 px-2 py-3 text-center bg-white rounded-md ">
+          <img src="/assets/svg/folder-blue.svg" alt="Folder-blue icon" class="w-[50px] aspect-1 mx-auto">
+          <h3 class="af-h5">
+            Uložiště
+          </h3>
+          <p class="af-body af-blue">
+            Naše uložiště vám pomůže dělat věci na 100%
+          </p>
+        </div>
+        <div class="flex flex-col gap-2 px-2 py-3 text-center bg-white rounded-md ">
+          <img src="/assets/svg/shield-blue.svg" alt="Shield-blue icon" class="w-[50px] aspect-1 mx-auto">
+          <h3 class="af-h5">
+            ochrana</h3>
+          <p class="af-body af-blue">
+            Naše nadprůměrná ochrana ochrání vás i váš projekt
+          </p>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <!-- Servicies Section -->
+  <section id="services" class="relative pb-8 bg-primary cs-gradient-bg after:-scale-y-100">
+    <div class="container">
+      <!-- Style as H1 -->
+      <h2 class="py-10 text-white medium:pt-24 af-services-h1 large:pt-32 large:pb-24">
+        NEJLEPŠÍ<br>
+        Webhosting<br>
+        pro VÁS!<br>
+      </h2>
+
+      <!-- Tier Cards -->
+      <div class="grid gap-4 large:grid-cols-3">
+
+        <!-- First Card -->
+        <div class="grid px-4 py-2 bg-white rounded-xl large:px-8 large:py-8">
+
+          <!-- Head of card -->
+          <div class="cs-card-head">
+            <hgroup class="large:my-6 af-services-tier-price large:col-start-1 large:row-start-2">
+              <h3>
+                <span>
+                  Zdarma
+                </span>
+                <span></span>
+              </h3>
+              <p class="hidden large:block">Nejlepší pro osobní projekty</p>
+            </hgroup>
+            <p class="af-services-tier-name large:col-start-1 large:row-start-1">BASIC</p>
+            <img src="/assets/svg/power-blue.svg" alt="Power-blue icon"
+              class="ml-auto h-[40px] large:col-start-2 large:row-span-2 large:self-start large:h-[56px]">
+          </div>
+
+          <!-- Body of card -->
+          <ul class="mb-2 large:my-6">
+            <li class="flex items-center border-t border-gray-300 border-solid large:py-3">
+              <img src="/assets/svg/global-purple.svg" alt="Global-purple icon"
+                class="h-[9px] aspect-1 medium:h-[13px] large:h-[20px]">
+              <p class="flex-grow pl-3 af-services-tier-item">Bleskově rychlá Enterprise CDN</p>
+            </li>
+            <li class="flex items-center border-t border-gray-300 border-solid large:py-3">
+              <img src="/assets/svg/box-purple.svg" alt="Box-purple icon"
+                class="h-[9px] aspect-1 medium:h-[13px] large:h-[20px]">
+              <p class="flex-grow pl-3 af-services-tier-item">Cloudové Domény</p>
+            </li>
+            <li class="flex items-center border-t border-gray-300 border-solid large:py-3">
+              <img src="/assets/svg/cubes-stack-purple.svg" alt="Cubes-stack-purple icon"
+                class="h-[9px] aspect-1 medium:h-[13px] large:h-[20px]">
+              <p class="flex-grow pl-3 af-services-tier-item">Uložiště do 20GB</p>
+            </li>
+            <li class="flex items-center border-t border-gray-300 border-solid large:py-3">
+              <img src="/assets/svg/chart-purple.svg" alt="chart-purple icon"
+                class="h-[9px] aspect-1 medium:h-[13px] large:h-[20px]">
+              <p class="flex-grow pl-3 af-services-tier-item">Statistiky</p>
+            </li>
+          </ul>
+
+          <!-- Footer of card -->
+          <button
+            class="px-6 py-1 mx-auto border border-solid rounded-full af-services-tier-button border-secondary-light text-secondary-light medium:py-2 medium:w-52 large:w-56">
+            ZAČNĚTE ZDARMA
+          </button>
+
+        </div>
+
+        <!-- Second Card -->
+        <div class="relative grid px-4 py-2 bg-white rounded-xl large:px-8 large:py-8 large:bottom-20">
+
+          <!-- Head of card -->
+          <div class="cs-card-head">
+            <hgroup class="large:my-6 af-services-tier-price large:col-start-1 large:row-start-2 ">
+              <h3>
+                <span class="cs-price-slash">
+                  239kč
+                </span>
+                <span>měsíc</span>
+              </h3>
+              <p class="hidden large:block">Perfektní pro začátek</p>
+            </hgroup>
+            <p class=" af-services-tier-name">PREMIUM</p>
+            <img src="/assets/svg/baloon-blue.svg" alt="Baloon-blue icon"
+              class="ml-auto h-[40px] large:col-start-2 large:row-span-2 large:self-start large:h-[56px]">
+          </div>
+
+          <!-- Body of card -->
+          <ul class="mb-2 large:my-6">
+            <li class="flex items-center border-t border-gray-300 border-solid large:py-3">
+              <img src="/assets/svg/global-purple.svg" alt="Global-purple icon"
+                class="h-[9px] aspect-1 medium:h-[13px] large:h-[20px]">
+              <p class="flex-grow pl-3 af-services-tier-item">Bleskově rychlá Enterprise CDN</p>
+            </li>
+            <li class="flex items-center border-t border-gray-300 border-solid large:py-3">
+              <img src="/assets/svg/box-purple.svg" alt="Box-purple icon"
+                class="h-[9px] aspect-1 medium:h-[13px] large:h-[20px]">
+              <p class="flex-grow pl-3 af-services-tier-item">Cloudové Domény</p>
+            </li>
+            <li class="flex items-center border-t border-gray-300 border-solid large:py-3">
+              <img src="/assets/svg/cubes-stack-purple.svg" alt="Cubes-stack-purple icon"
+                class="h-[9px] aspect-1 medium:h-[13px] large:h-[20px]">
+              <p class="flex-grow pl-3 af-services-tier-item">Uložiště do 100GB</p>
+            </li>
+            <li class="flex items-center border-t border-gray-300 border-solid large:py-3">
+              <img src="/assets/svg/chart-purple.svg" alt="chart-purple icon"
+                class="h-[9px] aspect-1 medium:h-[13px] large:h-[20px]">
+              <p class="flex-grow pl-3 af-services-tier-item">Statistiky</p>
+            </li>
+          </ul>
+
+          <!-- Footer of card -->
+          <button
+            class="px-6 py-1 mx-auto border border-solid rounded-full af-services-tier-button border-secondary-light text-secondary-light medium:py-2 medium:w-52 large:w-56">
+            ZAČNI TEĎ
+          </button>
+
+        </div>
+
+        <!-- Third Card -->
+        <div class="grid px-4 py-2 bg-white rounded-xl large:px-8 large:py-8">
+
+          <!-- Head of card -->
+          <div class="cs-card-head">
+            <hgroup class="large:my-6 af-services-tier-price large:col-start-1 large:row-start-2">
+              <h3>
+                <span class="cs-price-slash">
+                  479kč
+                </span>
+                <span>měsíc</span>
+              </h3>
+              <p class="hidden large:block">Perfektní pro váš projekt</p>
+            </hgroup>
+            <p class="af-services-tier-name">ENTERPRISE</p>
+            <img src="/assets/svg/baloons-blue.svg" alt="Baloons-blue icon"
+              class="ml-auto h-[40px] large:col-start-2 large:row-span-2 large:self-start large:h-[56px]">
+          </div>
+
+          <!-- Body of card -->
+          <ul class="mb-2 large:my-6">
+            <li class="flex items-center border-t border-gray-300 border-solid large:py-3">
+              <img src="/assets/svg/global-purple.svg" alt="Global-purple icon"
+                class="h-[9px] aspect-1 medium:h-[13px] large:h-[20px]">
+              <p class="flex-grow pl-3 af-services-tier-item">Bleskově rychlá Enterprise CDN</p>
+            </li>
+            <li class="flex items-center border-t border-gray-300 border-solid large:py-3">
+              <img src="/assets/svg/box-purple.svg" alt="Box-purple icon"
+                class="h-[9px] aspect-1 medium:h-[13px] large:h-[20px]">
+              <p class="flex-grow pl-3 af-services-tier-item">Cloudové Domény</p>
+            </li>
+            <li class="flex items-center border-t border-gray-300 border-solid large:py-3">
+              <img src="/assets/svg/cubes-stack-purple.svg" alt="Cubes-stack-purple icon"
+                class="h-[9px] aspect-1 medium:h-[13px] large:h-[20px]">
+              <p class="flex-grow pl-3 af-services-tier-item">Neomezené uložiště</p>
+            </li>
+            <li class="flex items-center border-t border-gray-300 border-solid large:py-3">
+              <img src="/assets/svg/chart-purple.svg" alt="chart-purple icon"
+                class="h-[9px] aspect-1 medium:h-[13px] large:h-[20px]">
+              <p class="flex-grow pl-3 af-services-tier-item">Statistiky</p>
+            </li>
+          </ul>
+
+          <!-- Footer of card -->
+          <button
+            class="px-6 py-1 mx-auto border border-solid rounded-full af-services-tier-button border-secondary-light text-secondary-light medium:py-2 medium:w-52 large:w-56">
+            ZAČNI TEĎ
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="my-6">
+    <div class="container flex flex-col gap-12 large:flex-row large:justify-between large:gap-[15%]">
+
+      <!-- Left Section -->
+      <div
+        class="flex flex-col gap-6 medium:flex-row medium:justify-between large:flex-col large:justify-start large:gap-16">
+        <hgroup>
+          <!-- Style as H1 -->
+          <h2 class="mb-3 af-features-h1">
+            Doporučené<br>
+            DOPLŇKY
+          </h2>
+          <p class="af-features-body">
+            Nejlepší pomoc na vaši cestě!<br>
+            Naše doplňy ke službám vám<br>
+            ulehčí práci i život.
+          </p>
+        </hgroup>
+
+        <ul class="flex flex-col gap-8 mx-auto af-features-body">
+          <li class="flex items-center gap-2">
+            <img src="/assets/svg/checkmark-blue.svg" alt="Checkmark-blue icon" class="h-[16px]">
+            <span>Doveďte vás projekt k dokonalosti.</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <img src="/assets/svg/checkmark-blue.svg" alt="Checkmark-blue icon" class="h-[16px]">
+            <span>Vše co potřebujete na jednom místě.</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <img src="/assets/svg/checkmark-blue.svg" alt="Checkmark-blue icon" class="h-[16px]">
+            <span>Dělejte si to po svém!</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right Section -->
+      <div class="grid self-end flex-grow w-full grid-cols-2 gap-4 large:w-auto">
+        <!-- Tiles  -->
+        <div class="hidden border-2 border-gray-300 border-primary"></div>
+        <div data-price="90"
+          class="cs-feature-tile js-feature-tile flex justify-between px-4 py-8 gap-2 border border-gray-300 border-solid rounded-md min-h-[9rem]">
+          <img src="/assets/svg/puzzle-blue.svg" alt="Puzzle-blue icon" class="h-[45px] self-center">
+          <hgroup class="af-features-hgroup">
+            <h3>90kč/měs.</h3>
+            <p>Idle Pro Plan</p>
+          </hgroup>
+        </div>
+        <div data-price="100"
+          class="cs-feature-tile js-feature-tile flex justify-between px-4 py-8 gap-2 border border-gray-300 border-solid rounded-md min-h-[9rem]">
+          <img src="/assets/svg/cog-wheel-purple.svg" alt="Cog-wheel-purple icon" class="h-[45px] self-center">
+          <hgroup class="af-features-hgroup">
+            <h3>100kč/měs.</h3>
+            <p>Manage wordpress</p>
+          </hgroup>
+        </div>
+        <div data-price="490"
+          class="cs-feature-tile js-feature-tile flex justify-between px-4 py-8 gap-2 border border-gray-300 border-solid rounded-md min-h-[9rem]">
+          <img src="/assets/svg/folder-purple.svg" alt="Folder-purple icon" class="h-[45px] self-center">
+          <hgroup class="af-features-hgroup">
+            <h3>490kč/měs.</h3>
+            <p>VPS</p>
+          </hgroup>
+        </div>
+        <div data-price="999"
+          class="cs-feature-tile js-feature-tile flex justify-between px-4 py-8 gap-2 border border-gray-300 border-solid rounded-md min-h-[9rem]">
+          <img src="/assets/svg/speedometer-purple.svg" alt="Speedometer-purple icon" class="h-[45px] self-center">
+          <hgroup class="af-features-hgroup">
+            <h3>999kč/měs.</h3>
+            <p>Zvýšená rychlost domén</p>
+          </hgroup>
+        </div>
+        <div data-price="200"
+          class="cs-feature-tile js-feature-tile flex justify-between px-4 py-8 gap-2 border border-gray-300 border-solid rounded-md min-h-[9rem]">
+          <img src="/assets/svg/global-www-purple.svg" alt="WWW-global-purple icon" class="h-[45px] self-center">
+          <hgroup class="af-features-hgroup">
+            <h3>200kč/měs.</h3>
+            <p>Vlastní doména</p>
+          </hgroup>
+        </div>
+        <div data-price="70"
+          class="cs-feature-tile js-feature-tile flex justify-between px-4 py-8 gap-2 border border-gray-300 border-solid rounded-md min-h-[9rem]">
+          <img src="/assets/svg/pacifier-purple.svg" alt="Pacifier-purple icon" class="h-[45px] self-center">
+          <hgroup class="af-features-hgroup">
+            <h3>70č/měs.</h3>
+            <p>Startovní Balíček</p>
+          </hgroup>
+        </div>
+        <div
+          class="self-stretch invisible col-span-2 py-3 text-center border border-gray-300 af-features-sum js-feature-sum">
+          Celkem:
+          <span data-key="value">0</span>kč/měs
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Why us? Section -->
+  <section id="why-us" class="my-20">
+    <div class="container grid gap-10">
+      <hgroup class="flex flex-col gap-6 af-whyus-hgroup">
+        <!-- Style as H1 -->
+        <h2>
+          Proč my?
+        </h2>
+        <p>
+          Jsme váš nejlepší parťák na cestě za úspěchem!<br>
+          24 hodin denně každý den v týdnu.<br>
+          Nabízíme vám to co vám nikde jinde nenabídnou<br>
+        </p>
+      </hgroup>
+
+
+      <!-- Items bellow -->
+      <ul class="grid items-start gap-6 medium:grid-cols-2 large:grid-cols-4">
+        <li class="flex flex-col justify-center gap-2 af-features-items-hgroup large:gap-8">
+          <img class="h-[36px] aspect-1 medium:h[42px] large:h-[50px]" src="/assets/svg/airplane-purple.svg"
+            alt="Airplane-purple icon">
+          <hgroup>
+            <h3>Rychlost</h3>
+            <p>
+              Rychlá a spolehlivá síť.<br>
+              Už žádné problémy se stabilitou a dlouhým načítáním.
+            </p>
+          </hgroup>
+        </li>
+        <li class="flex flex-col justify-center gap-2 af-features-items-hgroup large:gap-8">
+          <img class="h-[36px] aspect-1 medium:h[42px] large:h-[50px]" src="/assets/svg/lock-purple.svg"
+            alt="Lock-purple icon">
+          <hgroup>
+            <h3>Certifiované zabezpečení</h3>
+            <p>
+              Žádné potíže s útočníky!<br>
+              S naší ochranou si na vás nikdo netroufne.
+            </p>
+          </hgroup>
+        </li>
+        <li class="flex flex-col justify-center gap-2 af-features-items-hgroup large:gap-8">
+          <img class="h-[36px] aspect-1 medium:h[42px] large:h-[50px]" src="/assets/svg/baloons-purple.svg"
+            alt="Baloons-purple icon">
+          <hgroup>
+            <h3>Rychlé vylepšení</h3>
+            <p>
+              Během pár kliknutí si můžete vylepšít váš projekt! Vylepšení je okamžité.
+            </p>
+          </hgroup>
+        </li>
+        <li class="flex flex-col justify-center gap-2 af-features-items-hgroup large:gap-8">
+          <img class="h-[36px] aspect-1 medium:h[42px] large:h-[50px]" src="/assets/svg/shield-purple.svg"
+            alt="Shield-purple icon">
+          <hgroup>
+            <h3>Přenos dat</h3>
+            <p>
+              Nejrychlejší přenos dat!<br>
+              Bezpečný a rychlý.<br>
+              Už žádné dlouhé čekání.
+            </p>
+          </hgroup>
+        </li>
+      </ul>
+
+    </div>
+  </section>
+
+  <!-- Us vs Comptetion Section - Statistics Section (pie chart) -->
+  <section id="statistics">
+    <div class="container">
+      <!-- Style as H1 -->
+      <h2 class="af-statistics-h1">
+        host4you vs konurence
+      </h2>
+
+      <div class="grid items-center gap-6 large:grid-cols-2">
+
+        <!-- Chart Section -->
+        <!-- Left Section -->
+        <table class="bg-white shadow-md rounded-xl">
+          <!-- <ul class="flex flex-col divide-y af-statistics-items"> -->
+          <tr class="grid grid-cols-4 py-2 mx-4 my-2 border-b border-gray-300 border-solid">
+            <td>Rychlost</td>
+            <td>%</td>
+            <!-- Bar chart - do with CSS -->
+            <td data-key="speed"
+              class="relative w-20 h-5 bg-gray-400 rounded-full js-table-value justify-self-center before:absolute before:bg-primary before:content-[''] overflow-hidden">
+            </td>
+            <td class="">%</td>
+          </tr>
+          <tr class="grid grid-cols-4 py-2 mx-4 my-2 border-b border-gray-300 border-solid">
+            <td>Stabilita</td>
+            <td>%</td>
+            <!-- Bar chart - do with CSS -->
+            <td data-key="stability"
+              class="relative w-20 h-5 bg-gray-400 rounded-full js-table-value justify-self-center before:absolute before:bg-primary before:content-[''] overflow-hidden">
+            </td>
+            <td class="">%</td>
+          </tr>
+          <tr class="grid grid-cols-4 py-2 mx-4 my-2 border-b border-gray-300 border-solid ">
+            <td>Služby</td>
+            <td>%</td>
+            <!-- Bar chart - do with CSS -->
+            <td data-key="servicies"
+              class="relative w-20 h-5 bg-gray-400 rounded-full js-table-value justify-self-center before:absolute before:bg-primary before:content-[''] overflow-hidden">
+            </td>
+            <td class="">%</td>
+          </tr>
+          <tr class="grid grid-cols-4 py-2 mx-4 my-2">
+            <td>Cena</td>
+            <td>%</td>
+            <!-- Bar chart - do with CSS -->
+            <td data-key="price"
+              class="relative w-20 h-5 bg-gray-400 rounded-full js-table-value justify-self-center before:absolute before:bg-primary before:content-[''] overflow-hidden">
+            </td>
+            <td class="">%</td>
+          </tr>
+        </table>
+
+        <!-- Right Section -->
+        <div class="grid gap-3 mx-auto">
+          <!-- Top chart section -->
+          <div>
+            <!-- Make pie chart with p5 -->
+            <!-- Here lies canvas -->
+            <div class="w-[22rem] aspect-1 cursor-none js-stat-chart-wrapper overflow-hidden rounded-2xl">
+              <!-- <div class="absolute inset-[25%] rounded-full bg-white"></div> -->
+            </div>
+          </div>
+
+          <!-- Bottom Labels section -->
+          <ul class="grid grid-cols-2 justify-items-center js-stat-label-wrapper medium:grid-cols-3 large:grid-cols-4">
+            <template>
+              <!-- Set ::before element's bg color using JS when generating values -->
+              <li
+                class="af-statistics-values relative flex
+              js-stat-label before:rounded-full before:h-[12px] before:aspect-1 before:content-['']  before:absolute before:bg-[var(--color)] before:-left-4 before:top-1 ">
+                <p>%</p>
+                <p data-key="value" class="w-4">27</p>
+              </li>
+            </template>
+          </ul>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Reviews Slider Section -->
+  <section id="reviews" class="relative grid my-16 overflow-hidden cs-review-decorative-qoute">
+    <h2 class="invisible">Reviews</h2>
+    <div class="relative h-56 overflow-hidden js-reviews-wrapper">
+
+      <template class="js-review-template">
+
+        <div class="container absolute js-review">
+          <!-- Single review -->
+          <div class="grid gap-6">
+            <p class="af-review-body max-w-[50rem] line-clamp-3" data-key="review-body">
+              Rychlé, stabilní no prostě skvělé! Poměr cena výkon tak překvapí. Byl jsem u spousty konkurenčních
+              hostingů, ale žádný nebyl jako tento. Skvělé pro osobní projekty!</p>
+
+            <!-- User -->
+            <div class="flex gap-2">
+              <img data-type="type-url" data-key="review-userPicture" src="" alt="User picture"
+                class="h-[68px] aspect-1 rounded-xl object-cover">
+              <hgroup class="af-review-user-hgroup">
+                <h4 data-key="review-userName">Tim Bowman</h4>
+                <p data-key="review-description">Skvělé pro osboní projekty</p>
+              </hgroup>
+            </div>
+          </div>
+
+        </div>
+        1
+      </template>
+    </div>
+
+    <div class="container">
+      <!-- Slider dots showing available reviews -->
+      <div class="flex h-10 js-reviews-nav-wrapper">
+        <!-- Maybe contol buttons -->
+        <template>
+          <button class="relative w-10 outline-none right-4 cs-review-nav-state js-reviews-nav-item">
+            <div class="h-2 mx-auto rounded-full aspect-1 bg-slate-300">
+            </div>
+          </button>
+        </template>
+      </div>
+
+    </div>
+  </section>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"
+    integrity="sha512-3RlxD1bW34eFKPwj9gUXEWtdSMC59QqIqHnD8O/NoTwSJhgxRizdcFVQhUMFyTp5RwLTDL0Lbcqtl8b7bFAzog=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="module" src="/js/main.js"></script>
+</body>
+
+</html>

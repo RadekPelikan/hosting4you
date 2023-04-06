@@ -1,0 +1,26 @@
+{
+  "name": "fe-lvl1",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run build:css && npm run build:js",
+    "build:css": "npx tailwindcss -i css/tailwind.css -o css/style.css & postcss css/style.css -o css/style.css",
+    "watch:css": "npx tailwindcss -i css/tailwind.css -o css/style.css --watch",
+    "build:js": "babel-minify ./js/main.js -o ./js/main.min.js",
+    "watch:js": "onchange js -- npm run build:js"
+  },
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/line-clamp": "^0.4.2",
+    "autoprefixer": "^10.4.13",
+    "babel-minify": "^0.5.2",
+    "cssnano": "^5.1.15",
+    "onchange": "^7.1.0",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "tailwindcss": "^3.2.7",
+    "vite": "^4.1.0"
+  }
+}

@@ -1,0 +1,14 @@
+@import "./layers/base.css";        /* tailwind base layer + custom stuff therein */
+@import "./theme/typography.css";   /* typography and wysiwig styles */
+@import "./layers/components.css";  /* tailwind components layer + custom stuff therein */
+@import "./theme/container.css";    /* container vairables and classes */
+
+
+
+/*EVERYTHING THAT SHOULD BE OVERRIDDEN BY TAILWIND UTILITIES GOES ABOVE THIS POINT*/
+/* -------------------------------- */
+@import "./layers/utilities.css"; /* tailwind utilities layer + custom stuff therein */
+/* ---------------------------------
+ EVERYTHING THAT SHOULD !!!NOT!!! BE OVERRIDDEN BY TW UTILITIES GOES BELOW THIS POINT*/
+
+@import "./theme/font-face.css"; /* obličeje liter, neboli písmo-držky, či fonto-xichty */

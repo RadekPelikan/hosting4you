@@ -1,0 +1,157 @@
+@tailwind utilities;
+
+/* Navbar */
+.cs-link-line {
+  position: relative;
+}
+
+.cs-link-line::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  right: 50%;
+  width: 0px;
+  height: 2px;
+  background-color: white;
+  transition: left 200ms ease-out, right 200ms ease-out;
+}
+
+.cs-link-line:is(:focus-visible, :hover)::after {
+  left: 0px;
+  right: 0px;
+  width: auto;
+}
+
+/* Introduction Section */
+.cs-button-state {
+  transition: background-color 300ms ease-out, scale 50ms ease-out;
+}
+
+.cs-button-state:active {
+  background-color: theme("colors.primary-dark");
+  scale: 0.9;
+}
+
+.cs-button-state:is(:focus-visible, :hover) {
+  background-color: theme("colors.primary-dark");
+  animation: button-animation 1000ms;
+}
+
+@keyframes button-animation {
+  0% {
+    scale: 1;
+  }
+  10% {
+    scale: 1.2;
+  }
+  25% {
+    scale: 1.2;
+    rotate: 7deg;
+  }
+  50% {
+    scale: 1.2;
+    rotate: -7deg;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+.cs-glow-tile {
+  --box-shadow-color: transparent;
+  transition: box-shadow 200ms ease-out, scale 200ms ease-out;
+}
+
+.cs-glow-tile:hover {
+  --box-shadow-color: hsla(0, 0%, 81%, 0.5);
+  scale: 0.95;
+  box-shadow: 0px 0px hsla(0, 0%, 81%, 0.5) 8px 8px;
+}
+
+/* Servicies Section */
+.af-services-tier-price span {
+  position: relative;
+  bottom: 1px;
+}
+
+.af-services-tier-button {
+  position: relative;
+  transition: background-color 300ms ease-out, scale 50ms ease-out,
+    color 300ms ease-out;
+}
+
+.af-services-tier-button:is(:focus-visible, :hover) {
+  background-color: theme("colors.secondary-light");
+  color: white;
+
+  text-decoration: none;
+  transition: scale 50ms ease-out;
+}
+
+.af-services-tier-button:is(:focus-visible, :hover):before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border-radius: 999px;
+  border: white solid 1px;
+}
+
+.af-services-tier-button:active {
+  scale: 0.9;
+}
+
+.cs-card-head {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (min-width: theme("screens.large")) {
+  .cs-card-head {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 20% 80%;
+  }
+}
+
+/* Features Section */
+.cs-feature-tile {
+  transition: background-color 300ms ease-out, scale 50ms ease-out;
+}
+
+.cs-feature-tile:is(:focus-visible, :hover) {
+  scale: 1.05;
+  background-color: #f5f5f5;
+}
+
+/* Reviews Section */
+.cs-review-decorative-qoute {
+  position: relative;
+}
+
+.cs-review-decorative-qoute::after {
+  content: "❝";
+  position: absolute;
+  top: 4rem;
+  right: -5rem;
+  z-index: -10;
+  font-size: calc(10rem + 35vw);
+  transform: translateY(-25%);
+  line-height: 1em;
+  color: hsl(0, 0%, 86%);
+}
+
+.cs-review-nav-state:is(:focus-visible, :hover) div {
+  height: 1rem;
+}
+
+.js-table-value {
+  --right: 0;
+}
+
+.js-table-value::before {
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: var(--right);
+}

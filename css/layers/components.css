@@ -1,0 +1,34 @@
+@tailwind components;
+
+.cs-gradient-bg {
+  isolation: isolate;
+}
+
+.cs-gradient-bg::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  --tw-gradient-from: #fff;
+  --tw-gradient-to: #000;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  -webkit-mask-image: url("/assets/svg/bg-shape.svg");
+  -webkit-mask-size: 100% 100%;
+
+  mask-image: url("/assets/svg/bg-shape.svg");
+  webkit-mask-size: 100% 100%;
+
+  opacity: 0.07;
+}
+
+.cs-introduction-tiles {
+  grid-template-columns: 10% 2fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+@media (min-width: theme("screens.large")) {
+  .cs-introduction-tiles {
+    grid-template-rows: 1fr 1fr;
+  }
+}
